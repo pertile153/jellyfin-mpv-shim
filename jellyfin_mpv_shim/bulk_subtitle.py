@@ -183,7 +183,8 @@ def get_subbed(part):
 
     for subtitle in part.subtitle:
         lower_title = subtitle.name.lower() if subtitle.name is not None else ""
-        if subtitle.language_code != "eng" and "english" not in lower_title:
+        #if subtitle.language_code != "eng" and "english" not in lower_title:
+        if subtitle.language_code != "por" and "Portugues" not in lower_title:
             continue
         if subtitle.is_forced:
             continue
